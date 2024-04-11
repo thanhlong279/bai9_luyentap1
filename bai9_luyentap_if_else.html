@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>nhap a</label>
+<input type="number" id="a"><br>
+<label>nhap b</label>
+<input type="number" id="b"><br><br>
+<button onclick="kiem_tra()">kiem tra</button>
+<br>
+<br>
+<br>
+<br>
+<label>nhap tuoi hoc sinh</label>
+<input type="number" id="tuoihocsinh">
+<button onclick="test()">Try</button>
+<br>
+<br>
+<br>
+<script>
+  function kiem_tra() {
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    if (a > b) {
+      document.write("a lon hon b");
+    }else{
+      document.write(" a be hon b");
+    }
+  }
+  function test(){
+    let tuoihocsinh = +document.getElementById("tuoihocsinh").value;
+    if(tuoihocsinh >= 15){
+      document.write("du dieu kien hoc lop 10");
+    }else{
+      document.write("ko du dieu kien hoc lop 10")
+    }
+  }
+</script>
+</body>
+</html>
